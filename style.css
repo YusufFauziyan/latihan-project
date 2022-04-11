@@ -167,6 +167,10 @@ nav {
     color: #02897A !important;
 }
 
+.dark-theme .navbar-toggler {
+    background-color: white !important;
+}
+
 @media screen and (max-width: 575px) {
     .container {
         padding: 0 10%;
