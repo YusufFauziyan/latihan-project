@@ -73,6 +73,18 @@ nav {
 
 .btn-video {
     color: #02897A;
+    transition: .3s;
+}
+
+.btn-video:hover {
+    color: rgba(2, 137, 122, .5);
+}
+
+.half-round-btm {
+    background: linear-gradient(180deg, #EDEDED ,#fff);
+    border-radius: 50% 50% 00 / 100% 100% 0 0;
+    height: 7vh;
+    margin-bottom: 100px;
 }
 
 .order:hover {
@@ -112,6 +124,48 @@ nav {
     padding-bottom: 20px;
 }
 
+/* dark mode */
+.dark-theme{
+    background-color: #21343D;
+    color: white;
+}
+
+.dark-theme nav a,
+.dark-theme .sign-in,
+.dark-theme .footer a {
+    color: white !important;
+}
+
+.dark-theme .half-round-top {
+    background: linear-gradient(180deg, #21343D, #1b2930) !important;
+    border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+    height: 7vh;
+}
+
+.dark-theme .half-round-btm {
+    background: linear-gradient(180deg,  #1b2930, #21343D) !important;
+    border-radius: 50% 50% 0 0/ 100% 100% 0 0;
+    height: 7vh;
+}
+
+.dark-theme .card {
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+.dark-theme .price-card-1 {
+    background-color: white;
+    color: black;
+}
+
+.dark-theme .price-card-2 {
+    background-color: #02897A;
+}
+
+.dark-theme .footer .icon {
+    color: #02897A !important;
+}
 
 @media screen and (max-width: 575px) {
     .container {

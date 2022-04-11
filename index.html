@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- == FAV ICON == -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,16 +18,16 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!--  CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Layouting</title>
+    <title>Latihan Layouting</title>
   </head>
   <body>
 
     <!-- == NAV BARR == -->
-    <div style="background: linear-gradient(180deg, #fff, #EDEDED )">
+    <div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container row-lg">
-          <a class="navbar-brand col-xl-6 col-md-4" href="#">
-            <img src="img/logo.svg" alt="logo" width="120px">
+          <a class="navbar-brand col-xl-6 col-md-4 fw-700 fs-4" href="#" style="color: #02897A;">
+            <img class="me-2" src="img/favicon.png" alt="logo" width="30px"> Product
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,13 +35,13 @@
           <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-bold" aria-current="page" href="#">Product</a>
+                <a class="nav-link fw-bold" aria-current="page" href="#product">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Customers</a>
+                <a class="nav-link" href="#customers">Customers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resources</a>
@@ -51,7 +54,9 @@
               <a href="">
                 <button class="btn bg-green text-white me-3 sign-up" type="submit">Sign Up</button>
               </a>
-              <img src="img/switch-theme.png" alt="switch-theme" style="cursor: pointer;" width="40px">
+              <!-- Theme Cahnge Button -->
+              <i class='bx bx-brightness-half change-theme' style="font-size: 2rem; cursor: pointer; color: #02897A;" id="theme-button" onclick="changeTheme()"></i>
+              
             </div>
           </div>
         </div>
@@ -108,13 +113,13 @@
       </div>
     </div>
 
-    <div style="background-color: #EDEDED; border-radius: 0 0 50% 50%/ 0 0 100% 100%; height: 7vh; margin-bottom: 100px;"></div>
+    <div class="half-round-top" style="background: linear-gradient(180deg, #fff, #EDEDED ); border-radius: 0 0 50% 50%/ 0 0 100% 100%; height: 7vh; margin-bottom: 100px;"></div>
 
 
     <!-- ==content 2 -->
     <div class="container content-2">
 
-      <div class="d-flex row" style="margin-bottom: 100px;">
+      <div class="d-flex row" style="margin-bottom: 100px;" id="product">
         <div class="col-sm-5 m-auto feature-desc">
           <h5>Effortless Validation for</h5>
           <h2>Management</h2>
@@ -169,11 +174,10 @@
 
     </div>
 
-    <div style="background-color: #F7F7F7; border-radius: 50% 50% 0 0/ 100% 100% 0 0; height: 10vh;" class="half-round"></div>
-
+    <div class="half-round-btm"></div>
 
     <!-- CONTENT 3 -->
-    <div style="background: linear-gradient(180deg, #F7F7F7, white );">
+    <div id="customers">
       <div class="container text-center d-flex flex-column" style="margin-bottom: 100px;">
         <h1>Quick & Easy Process</h1>
         <p>Do you require some help for your project: Conception workshop, <br>
@@ -182,22 +186,22 @@
         <div class="d-lg-flex content-3-card justify-content-around">
           <div>
             <img src="img/avator-1.png" alt="" class="me-2">
-            <span class="shadow" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can take care of your plitch</span>
+            <span class="shadow text-dark" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can take care of your plitch</span>
           </div>
           <div>
-            <span class="shadow" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can prototye your app</span>
+            <span class="shado text-dark" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can prototye your app</span>
             <img src="img/avator-2.png" alt="" class="ms-2">
           </div>
         </div>
 
         <div class="d-lg-flex content-3-card justify-content-evenly">
           <div>
-            <span class="shadow" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can Design your website</span>
+            <span class="shadow text-dark" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can Design your website</span>
             <img src="img/avator-4.png" alt="" class="ms-2">
           </div>
           <div>
             <img src="img/avator-3.png" alt="" class="me-2">
-            <span class="shadow" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can marketing strategy</span>
+            <span class="shadow text-dark" style="padding: 10px 30px; background-color: #fff; border-radius: 20px;">I can marketing strategy</span>
           </div>
         </div>
 
@@ -219,7 +223,7 @@
 
           <div class="card" style="width: 25rem;">
             <img src="img/card-img-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-4">
+            <div class="card-body p-4 shadow-sm">
               <h6>By <b>Wahid Ari</b> |  03 March 2019</h6>
               <h4 style="line-height: 40px; font-weight: 700;">Increasing Prosperity With Positive Thinking</h4>
             </div>
@@ -227,7 +231,7 @@
 
           <div class="card" style="width: 25rem;">
             <img src="img/card-2.png" class="card-img-top" alt="...">
-            <div class="card-body p-4">
+            <div class="card-body p-4 shadow-sm">
               <h6>By <b>Wahid Ari</b> |  03 March 2019</h6>
               <h4 style="line-height: 40px; color: #02897A; font-weight: 700;">Motivation Is The First Step To Success</h4>
             </div>
@@ -235,7 +239,7 @@
 
           <div class="card" style="width: 25rem;">
             <img src="img/card-3.png" class="card-img-top" alt="...">
-            <div class="card-body p-4">
+            <div class="card-body p-4 shadow-sm">
               <h6>By <b>Wahid Ari</b> |  03 March 2019</h6>
               <h4 style="line-height: 40px; font-weight: 700;">Success Steps For Your Personal Or Business</h4>
             </div>
@@ -252,14 +256,14 @@
       
 
       <!-- PRICE TABLE -->
-      <div class="container text-center" style="margin-top: 100px;">
+      <div id="pricing" class="container text-center" style="margin-top: 100px;">
         <h1 style="font-weight: 700;">Price Table</h1>
         <h6 style="font-weight: 500;">We offer competitive price</h6>
 
         <div class="d-lg-flex justify-content-between mt-4 price">
 
-          <div class="d-flex price-card">
-            <div class="card" style="width: 18rem;">
+          <div class="d-flex price-card ">
+            <div class="card price-card-1" style="width: 18rem;">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-700 mb-3">Free</h5>
                 <p>Brief price description</p>
@@ -280,8 +284,8 @@
             </div>
           </div>
           
-          <div class="d-flex price-card">
-            <div class="card bg-green" style="width: 18rem; color: white;">
+          <div class="d-flex price-card ">
+            <div class="card bg-green price-card-2" style="width: 18rem; color: white;">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-700 mb-3">Standard</h5>
                 <p>Brief price description</p>
@@ -302,8 +306,8 @@
             </div>
           </div>
 
-          <div class="d-flex price-card">
-            <div class="card" style="width: 18rem;">
+          <div class="d-flex price-card ">
+            <div class="card price-card-1" style="width: 18rem;">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-700 mb-3">Premium</h5>
                 <p>Brief price description</p>
@@ -336,7 +340,7 @@
 
         <div class="d-md-flex justify-content-between mt-5">
 
-          <div class="d-flex flex-column shadow-sm p-4 review-card" style=" width: 327px;">
+          <div class="d-flex flex-column shadow-sm p-4 review-card bg-white" style="border-radius: 10px; width: 327px;">
             <div>
               <i class='bx bxs-star checked' ></i>
               <i class='bx bxs-star checked' ></i>
@@ -356,7 +360,7 @@
             </div>
           </div>
   
-          <div class="d-flex flex-column shadow-sm p-4 review-card" style=" width: 327px;">
+          <div class="d-flex flex-column shadow-sm p-4 review-card bg-white" style="border-radius: 10px; width: 327px;">
             <div>
               <i class='bx bxs-star checked' ></i>
               <i class='bx bxs-star checked' ></i>
@@ -376,7 +380,7 @@
             </div>
           </div>
   
-          <div class="d-flex flex-column shadow-sm p-4 review-card" style=" width: 327px;">
+          <div class="d-flex flex-column shadow-sm p-4 review-card bg-white" style="border-radius: 10px; width: 327px;">
             <div>
               <i class='bx bxs-star checked' ></i>
               <i class='bx bxs-star checked' ></i>
@@ -419,8 +423,8 @@
 
           <div class="col-lg-3 footer-icon">
             <div class="mb-lg-5">
-              <a href="">
-                <img src="img/logo.svg" alt="logo" width="200px">
+              <a href="" class="fw-700 text-decoration-none text-dark fs-2">
+                <img class="me-3" src="img/favicon.png" alt="logo" width="35px">Product
               </a>
             </div>
             <a href="" class="icon">
@@ -467,40 +471,49 @@
         <h6 class="text-center mt-5 fs-5 fw-500">Made With Love By Yusuf All Right Reserved </h6>
 
       </div>
-      
-
-
+  
     </div>
 
       
       
       
       
-      <!-- <nav class="container navbar">
-        <img src="img/logo.svg" alt="logo">
-        <ul class="navbar-nav">
-          <li><a href="" class="nav-link active">Product</a></li>
-          <li><a href="" class="nav-link">Customers</a></li>
-          <li><a href="" class="nav-link">Pricing</a></li>
-          <li><a href="" class="nav-link">Resources</a></li>
-        </ul>
-        <a href="">
-          <button class="bg-white btn-signin me-3">Sign In</button>
-        </a>
-        <a href="">
-          <button>Sign Up</button>
-        </a>
-        <img src="img/switch-theme.png" alt="SwitchTheme">
-      </nav> -->
+    <script>
 
+      function changeTheme () {
+        let elemet = document.body
+        elemet.classList.toggle("dark-theme")
+      }
 
+      // const themeButton = document.getElementById('theme-button')
+      // const lightTheme = 'light-theme'
 
+      // // Previously selected topic (if user selected)
+      // const selectedTheme = localStorage.getItem('selected-theme')
+      // // const selectedIcon = localStorage.getItem('selected-icon')
 
+      // // We obtain the current theme that the interface has by validating the light-theme class
+      // const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'light' : 'dark'
+      // // const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
 
+      // // We validate if the user previously chose a topic
+      // // if (selectedTheme) {
+      // //   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+      // //   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+      // //   themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+      // // }
 
+      // // Activate / deactivate the theme manually with the button
+      // themeButton.addEventListener('click', () => {
+      //     // Add or remove the light / icon theme
+      //     document.body.classList.toggle(lightTheme)
+      //     themeButton.classList.toggle(iconTheme)
+      //     // We save the theme and the current icon that the user chose
+      //     localStorage.setItem('selected-theme', getCurrentTheme())
+      //     localStorage.setItem('selected-icon', getCurrentIcon())
+      // })
 
-
-
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
